@@ -10,6 +10,7 @@ from .models import (
 
 class CinemaHallSerializer(serializers.ModelSerializer):
     capacity = serializers.SerializerMethodField()
+
     class Meta:
         model = CinemaHall
         fields = ["id", "name", "rows", "seats_in_row", "capacity"]
